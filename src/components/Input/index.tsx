@@ -19,9 +19,16 @@ export function Input({
 }: InputProps) {
    return (
       <Box {...rest}>
-         {label && <Text color='white'>{label}</Text>}
+         {label && (
+            <Text
+               color='white'
+               mb='8px'>
+               {label}
+            </Text>
+         )}
          <InputUI
             bgColor={'white'}
+            h='50px'
             placeholder={placeholder}
             value={value}
             onChange={onChange}

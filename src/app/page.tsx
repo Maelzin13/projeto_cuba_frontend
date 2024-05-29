@@ -1,5 +1,10 @@
+import { Button } from '@chakra-ui/react';
+import Link from 'next/link';
+
 export default function Home() {
-  return (
-    <h2>Hello DevCub!!!!</h2>
-  );
+   return (
+      <Link href='/entrar'>
+         <Button>Login</Button>
+      </Link>
+   );
 }

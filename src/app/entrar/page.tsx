@@ -38,17 +38,20 @@ export default function LoginPage() {
                   src='images/logo.svg'
                   w={20}
                   mb='120px'
-                  mt='70px'/>
+                  mt='70px'
+               />
                <Box>
                   <Input
                      label='Usuário'
                      placeholder='Digite seu usuário'
-                     mb='33px'/>
-                     
+                     mb='33px'
+                  />
+
                   <Input
                      label='Senha'
                      placeholder='Digite sua senha'
-                     mb='10px'/>
+                     mb='10px'
+                  />
                </Box>
                <Link href='#'>
                   <Text
@@ -79,57 +82,66 @@ export default function LoginPage() {
                      h={0.5}
                      w='100%'
                      maxW={300}
-                     bgColor='white'/>
+                     bgColor='white'
+                  />
                   <Text color='white'>ou</Text>
                   <Box
                      h={0.5}
                      w='100%'
                      maxW={300}
-                     bgColor='white'/>
+                     bgColor='white'
+                  />
                </Flex>
 
                <Flex
                   alignSelf='center'
                   gap='40px'
-                  mt='38px'> 
+                  mt='38px'>
                   <IconButton
                      bgColor='transparent'
-                     fontSize={55} 
+                     fontSize={55}
                      _hover={{
                         background: 'none',
                      }}
                      aria-label='Entrar com o Google'
-                     icon={<FcGoogle width={65} />} 
-                     />
-                     
+                     icon={<FcGoogle width={65} />}
+                  />
+
                   <IconButton
                      bgColor='transparent'
-                     fontSize={55} 
+                     fontSize={55}
                      _hover={{
                         background: 'none',
                      }}
                      aria-label='Entrar com o GitHub'
                      icon={
                         <IoLogoGithub
-                           width={65} 
-                           color='white'/>
-                     }/>
-
+                           width={65}
+                           color='white'
+                        />
+                     }
+                  />
                </Flex>
-               <Link href='#'> 
+
+               <Flex
+                  justify='center'
+                  mt='40px'>
                   <Text
                      color='white'
-                     textAlign='center'
-                     mt='40px'>
-                     Não tem uma conta? <span style={{ color: '#724EDB' }}>Cadastre-se</span>
+                     mr='4px'>
+                     Não tem uma conta?{' '}
                   </Text>
-               </Link>
+                  <Link href='#'>
+                     <Text color='#724EDB'>Cadastre-se</Text>
+                  </Link>
+               </Flex>
             </Flex>
             <Image
                src='images/astronaut.png'
                w={585}
-               mt='90px' 
-               animation={`${float} 5s ease-in-out infinite`}/>
+               mt='90px'
+               animation={`${float} 5s ease-in-out infinite`}
+            />
          </Flex>
       </Box>
    );

@@ -15,9 +15,8 @@ import { IoLogoGithub } from 'react-icons/io';
 
 const float = keyframes`
   0% { transform: translateY(0); }
-  50% { transform: translateY(-50px); }
-  100% { transform: translateY(0); }
-`;
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }`;
 
 export default function LoginPage() {
    return (
@@ -39,19 +38,17 @@ export default function LoginPage() {
                   src='images/logo.svg'
                   w={20}
                   mb='120px'
-                  mt='70px'
-               />
+                  mt='70px'/>
                <Box>
                   <Input
                      label='Usuário'
                      placeholder='Digite seu usuário'
-                     mb='33px'
-                  />
+                     mb='33px'/>
+                     
                   <Input
                      label='Senha'
                      placeholder='Digite sua senha'
-                     mb='10px'
-                  />
+                     mb='10px'/>
                </Box>
                <Link href='#'>
                   <Text
@@ -82,51 +79,57 @@ export default function LoginPage() {
                      h={0.5}
                      w='100%'
                      maxW={300}
-                     bgColor='white'
-                  />
+                     bgColor='white'/>
                   <Text color='white'>ou</Text>
                   <Box
                      h={0.5}
                      w='100%'
                      maxW={300}
-                     bgColor='white'
-                  />
+                     bgColor='white'/>
                </Flex>
 
                <Flex
                   alignSelf='center'
                   gap='40px'
-                  mt='58px'>
+                  mt='38px'> 
                   <IconButton
                      bgColor='transparent'
-                     fontSize={65}
+                     fontSize={55} 
                      _hover={{
                         background: 'none',
                      }}
                      aria-label='Entrar com o Google'
-                     icon={<FcGoogle width={70} />}
-                  />
+                     icon={<FcGoogle width={65} />} 
+                     />
+                     
                   <IconButton
                      bgColor='transparent'
-                     fontSize={65}
+                     fontSize={55} 
                      _hover={{
                         background: 'none',
                      }}
-                     aria-label='Entrar com o Google'
+                     aria-label='Entrar com o GitHub'
                      icon={
                         <IoLogoGithub
-                           width={70}
-                           color='white'
-                        />
-                     }
-                  />
+                           width={65} 
+                           color='white'/>
+                     }/>
+
                </Flex>
+               <Link href='#'> 
+                  <Text
+                     color='white'
+                     textAlign='center'
+                     mt='40px'>
+                     Não tem uma conta? <span style={{ color: '#724EDB' }}>Cadastre-se</span>
+                  </Text>
+               </Link>
             </Flex>
             <Image
                src='images/astronaut.png'
-               w={614}
-               animation={`${float} 5s ease-in-out infinite`}
-            />
+               w={585}
+               mt='90px' 
+               animation={`${float} 5s ease-in-out infinite`}/>
          </Flex>
       </Box>
    );
